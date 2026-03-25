@@ -191,4 +191,55 @@ Este projeto implementa conceitos baseados em:
 
 Projeto desenvolvido como parte de TCC / pesquisa em Text-to-SQL e LLMs.
 
+##  Exemplos de Perguntas por Nível de Complexidade
+
+As consultas abaixo foram utilizadas para avaliar o desempenho do sistema em diferentes níveis de complexidade no cenário de Text-to-SQL.
+
+###  Level 1: queries with simple filters
+
+* Quantos edifícios estão localizados na cidade de São Paulo?
+* Quantos edifícios estão no bairro Bela Vista?
+* Qual a rua de endereço do empreendimento Mirador?
+* Qual a quantidade de andares no empreendimento Mirador?
+* Liste os id_unidade que possuem um preço maior que R$ 2.000.000.
+* Liste os tipos de tipologia que possuem exatamente 3 quartos.
+* Qual a área privativa máxima entre as unidades do tipo apartamento?
+* Quantas unidades têm exatamente 1 suíte e 2 quartos?
+* Quantas unidades com área acima de 150m² estão disponíveis para venda?
+
+---
+
+###  Level 2: queries involving joins and aggregations
+
+* Qual a quantidade de empreendimentos da incorporadora Melnick Even?
+* Quais empreendimentos são classificados como residencial e não são de Minha Casa Minha Vida?
+* Qual a área média das unidades no bairro Jardim Europa?
+* Qual o preço médio das unidades localizadas no bairro Bela Vista?
+* Qual o desconto médio das unidades que pertencem à incorporadora Chies?
+* Qual a média de desconto para unidades com 4 quartos?
+* Qual a média de andares dos edifícios?
+* Qual a média da quantidade de banheiros nas unidades localizadas em Porto Alegre?
+* Qual a área média das unidades para cada tipo de empreendimento?
+* Qual o valor médio de preço para cada tipo de tipologia?
+
+---
+
+###  Level 3: queries with more complex logic and multiple relations
+
+* Liste todos os nomes de empreendimentos com status "pronto novo" e do tipo vertical.
+* Liste os empreendimentos que possuem mais de 20 andares e mais de 3 torres.
+* Liste os bairros que têm empreendimentos com mais de 15 andares.
+* Qual a maior quantidade de vagas de estacionamento registrada em uma única tipologia?
+* Liste os empreendimentos que têm tipologias com área total maior que 500 metros quadrados.
+* Qual a quantidade média de banheiros em tipologias com 3 quartos?
+* Qual o valor máximo já registrado em um preço de unidade?
+* Qual o desconto médio geral de todas as unidades?
+* Qual o preço médio das unidades que não estão mais disponíveis?
+* Qual o preço da unidade mais cara e a qual empreendimento ela pertence?
+* Quantas unidades o empreendimento Tendence possui?
+
+---
+
+Esses exemplos cobrem desde consultas simples até cenários mais complexos, permitindo avaliar a robustez do pipeline THoRR na geração de consultas SQL a partir de linguagem natural.
+
 
