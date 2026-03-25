@@ -193,9 +193,6 @@ Este projeto implementa conceitos baseados em:
 
 ---
 
-##  Autora
-
-Projeto desenvolvido como parte de TCC / pesquisa em Text-to-SQL e LLMs.
 
 ##  Exemplos de Perguntas por Nível de Complexidade
 
