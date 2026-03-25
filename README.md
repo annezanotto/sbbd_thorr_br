@@ -28,6 +28,7 @@ Usuário → Classificador de Intenção → Pipeline THoRR → LLM → SQL → 
 
 ##  Estrutura do Projeto
 
+```
 .
 ├── main.py
 ├── config.py
@@ -43,6 +44,8 @@ Usuário → Classificador de Intenção → Pipeline THoRR → LLM → SQL → 
     ├── intent_classifier.py
     ├── conversation.py
     └── local_llm.py
+```
+
 
     
 ##  Funcionalidades
